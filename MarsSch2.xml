@@ -4,9 +4,27 @@
       <block type="robot_delay" id="12" inline="true">
         <value name="DELAY">
           <block type="math_number" id="19">
-            <field name="NUM">73800</field>
+            <field name="NUM">3800</field>
           </block>
         </value>
+        <next>
+          <block type="controls_repeat" id="26" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="42">
+                <field name="NUM">14</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="robot_delay" id="28" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="35">
+                    <field name="NUM">5000</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
       </block>
     </next>
   </block>

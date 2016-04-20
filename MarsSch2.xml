@@ -7,7 +7,7 @@
     </value>
     <value name="BOTHMOVRIGHT">
       <block type="math_number" id="129">
-        <field name="NUM">65</field>
+        <field name="NUM">45</field>
       </block>
     </value>
     <next>
@@ -16,7 +16,7 @@
           <block type="robot_delay" id="12" inline="true">
             <value name="DELAY">
               <block type="math_number" id="19">
-                <field name="NUM">580</field>
+                <field name="NUM">500</field>
               </block>
             </value>
             <next>

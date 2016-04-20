@@ -2,7 +2,7 @@
   <block type="movement_setmotors" id="115" inline="true" x="3" y="-25">
     <value name="BOTHMOVLEFT">
       <block type="math_number" id="122">
-        <field name="NUM">87</field>
+        <field name="NUM">78</field>
       </block>
     </value>
     <value name="BOTHMOVRIGHT">
@@ -16,7 +16,7 @@
           <block type="robot_delay" id="12" inline="true">
             <value name="DELAY">
               <block type="math_number" id="19">
-                <field name="NUM">3800</field>
+                <field name="NUM">380</field>
               </block>
             </value>
             <next>

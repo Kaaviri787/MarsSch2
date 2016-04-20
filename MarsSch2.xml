@@ -1,30 +1,44 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="3" y="2">
+  <block type="movement_setmotors" id="115" inline="true" x="3" y="-25">
+    <value name="BOTHMOVLEFT">
+      <block type="math_number" id="122">
+        <field name="NUM">87</field>
+      </block>
+    </value>
+    <value name="BOTHMOVRIGHT">
+      <block type="math_number" id="129">
+        <field name="NUM">100</field>
+      </block>
+    </value>
     <next>
-      <block type="robot_delay" id="12" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="19">
-            <field name="NUM">3800</field>
-          </block>
-        </value>
+      <block type="movement_forward" id="10">
         <next>
-          <block type="controls_repeat" id="26" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="42">
-                <field name="NUM">14</field>
+          <block type="robot_delay" id="12" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="19">
+                <field name="NUM">3800</field>
               </block>
             </value>
-            <statement name="DO">
-              <block type="robot_delay" id="28" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="35">
-                    <field name="NUM">5000</field>
+            <next>
+              <block type="controls_repeat" id="26" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="42">
+                    <field name="NUM">14</field>
                   </block>
                 </value>
+                <statement name="DO">
+                  <block type="robot_delay" id="28" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="35">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="movement_stop" id="53"></block>
+                </next>
               </block>
-            </statement>
-            <next>
-              <block type="movement_stop" id="53"></block>
             </next>
           </block>
         </next>
